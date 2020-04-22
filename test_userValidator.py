@@ -28,3 +28,9 @@ class Test_userValidator:
 		assert result == "matched"
 
 
+	def test_GivenPassword_Whenmatch_Should_ReturnTrue(self):
+		validator=ValidateUser()
+		result=validator.passWord("@Qwerty12")
+		assert result == "matched"
+
+
