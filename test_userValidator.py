@@ -15,3 +15,9 @@ class Test_userValidator:
 		result=validator.lastName("Cherukumalli")
 		assert result == "matched"
 
+
+	def test_GivenEmail_Whenmatch_Should_ReturnTrue(self):
+		validator=ValidateUser()
+		result=validator.emailId("cat.dog@cd.co.in")
+		assert result == "matched"
+
