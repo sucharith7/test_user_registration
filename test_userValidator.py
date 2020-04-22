@@ -10,5 +10,8 @@ class Test_userValidator:
 		assert result == "matched"
 
 
-	
+	def test_GivenLname_Whenmatch_Should_ReturnTrue(self):
+		validator=ValidateUser()
+		result=validator.lastName("Cherukumalli")
+		assert result == "matched"
 
