@@ -21,3 +21,10 @@ class Test_userValidator:
 		result=validator.emailId("cat.dog@cd.co.in")
 		assert result == "matched"
 
+
+	def test_GivenMnumber_Whenmatch_Should_ReturnTrue(self):
+		validator=ValidateUser()
+		result=validator.mobileNumber("91 7836028824")
+		assert result == "matched"
+
+
