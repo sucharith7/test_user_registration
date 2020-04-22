@@ -23,3 +23,11 @@ class ValidateUser:
 			return "matched"
 		else:
 			return "not matched"
+
+
+	def mobileNumber(self,Mnumber):
+		match=re.match(r'^[1-9]{2}[ ]\w{10}$',Mnumber)
+		if match:
+			return "matched"
+		else:
+			return "not matched"
