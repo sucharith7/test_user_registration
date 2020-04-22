@@ -31,3 +31,11 @@ class ValidateUser:
 			return "matched"
 		else:
 			return "not matched"
+
+
+	def passWord(self,Password):
+		match=re.match(r'^[A-Za-z0-9@#$%^&+=]{8,}',Password)
+		if match:
+			return "matched"
+		else:
+			return "not matched"
